@@ -1,0 +1,10 @@
+USE competencias;
+
+CREATE TABLE IF NOT EXISTS competencia 
+(
+    `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `nombre` VARCHAR(200) NOT NULL,
+    `activa` VARCHAR(1) NOT NULL DEFAULT 'S',
+    PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
